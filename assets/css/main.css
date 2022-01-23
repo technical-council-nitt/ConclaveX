@@ -72,6 +72,10 @@ input, select, textarea {
 	appearance: none;
 }
 
+body {
+	user-select: none;
+}
+
 /* Basic */
 
 	html {
@@ -1079,3 +1083,15 @@ input, select, textarea {
 		#header nav {
 			padding: 0 1em;
 		} }
+
+
+		
+canvas {
+	background: #08233e13;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 20;
+}
