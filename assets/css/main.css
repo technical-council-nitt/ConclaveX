@@ -1095,3 +1095,24 @@ canvas {
 	height: 100%;
 	z-index: 20;
 }
+
+
+#header {
+	position: absolute;
+	z-index: 50;
+	left: 0%;
+    top: 30%;
+    transform: translate(-50%,-50%);
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+#center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+}
