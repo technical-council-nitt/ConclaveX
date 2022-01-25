@@ -1,161 +1,284 @@
-const colors = {
-  mercedes: '#00D2BE',
-  ferrari: '#DC0000',
-  redBull: '#1E41FF',
-  renault: '#FFF500',
-  racingPoint: '#F596C8',
-  alfaRomeo: '#9B0000',
-  toroRosso: '#469BFF',
-  haas: '#BD9E57',
-  mclaren: '#FF8700',
-  williams: '#FFFFFF'
-}
-
-// array describing the drivers, sorted by position and with a gap describing the distance from the leading driver
+ 
+  // array describing the drivers, sorted by position and with a total describing the distance from the leading driver
 const leaderboard = [
-  {
-    name: 'Lewis Hamilton',
-    team: 'mercedes',
-    gap: 'Leader'
-  },
-  {
-    name: 'Valteri Bottas',
-    team: 'mercedes',
-    gap: '+6.552s'
-  },
-  {
-    name: 'Sebastian Vettel',
-    team: 'ferrari',
-    gap: '+13.744s'
-  },
-  {
-    name: 'Max Verstappen',
-    team: 'red bull',
-    gap: '+27.627s'
-  },
-  {
-    name: 'Charles Leclerc',
-    team: 'ferrari',
-    gap: '+31.627s'
-  },
-  {
-    name: 'Pierre Gasly',
-    team: 'red bull',
-    gap: '+89.307s'
-  },
-  {
-    name: 'Daniel Ricciardo',
-    team: 'renault',
-    gap: '+1 lap'
-  }, {
-    name: 'Sergio Perez',
-    team: 'racing point',
-    gap: '+1 lap'
-  },
-  {
-    name: 'Kimi Räikkönen',
-    team: 'alfa romeo',
-    gap: '+1 lap'
-  },
-  {
-    name: 'Alexander Albon',
-    team: 'toro rosso',
-    gap: '+1 lap'
-  },
-  {
-    name: 'Romain Grosjean',
-    team: 'haas',
-    gap: '+1 lap'
-  },
-  {
-    name: 'Lance Stroll',
-    team: 'racing point',
-    gap: '+1 lap'
-  },
-  {
-    name: 'Kevin Magnussen',
-    team: 'haas',
-    gap: '+1 lap'
-  },
-  {
-    name: 'Carlos Sainz',
-    team: 'mclaren',
-    gap: '+1 lap'
-  },
-  {
-    name: 'Antonio Giovinazzi',
-    team: 'alfa romeo',
-    gap: '+1 lap'
-  },
-  {
-    name: 'George Russell',
-    team: 'williams',
-    gap: '+2 laps'
-  },
-  {
-    name: 'Robert Kubica',
-    team: 'williams',
-    gap: '+2 laps'
-  },
-  {
-    name: 'Lando Norris',
-    team: 'mclaren',
-    gap: 'DNF'
-  },
-  {
-    name: 'Daniil Kvyat',
-    team: 'toro rosso',
-    gap: 'DNF'
-  },
-  {
-    name: 'Nico Hulkenberg',
-    team: 'renault',
-    gap: 'DNF'
-  }
-];
+    {
+      name: 'NITT',
+      place: 'trichy',
+      total: 888888.8,
+      comp1: 1.2,
+      comp2: 3.4,
+      comp3: 4.2,
+      img: 'logos/trichy.png'
+    },
+    {
+      name: 'NITRKL',
+      place: 'Rourkela',
+      total: 8.8,
+      comp1: 1.2,
+      comp2: 3.4,
+      comp3: 4.2,
+    },
+    {
+      name: 'NITK',
+      place: 'Surathkal',
+      total: 8.8,
+      comp1: 1.2,
+      comp2: 3.4,
+      comp3: 4.2,
+    },
+    {
+      name: 'NITW',
+      place: 'Warangal',
+      total: 8.8,
+      comp1: 1.2,
+      comp2: 3.4,
+      comp3: 4.2,
+    },
+    {
+      name: 'NITDGP',
+      place: 'Durgapur',
+      total: 8.8,
+      comp1: 1.2,
+      comp2: 3.4,
+      comp3: 4.2,
+    },
+    {
+      name: 'VNIT',
+      place: 'Nagpur',
+      total: 8.8,
+      comp1: 1.2,
+      comp2: 3.4,
+      comp3: 4.2,
+    },
+    {
+      name: 'MNIT',
+      place: 'Jaipur',
+      total: 8.8,
+      comp1: 1.2,
+      comp2: 3.4,
+      comp3: 4.2,
+    }, 
+    {
+      name: 'MNNIT',
+      place: 'Allahabad',
+      total: 8.8,
+      comp1: 1.2,
+      comp2: 3.4,
+      comp3: 4.2,
+    },
+    {
+      name: 'NITKKR',
+      place: 'Kurukshetra',
+      total: 8.8,
+      comp1: 1.2,
+      comp2: 3.4,
+      comp3: 4.2,  
+    },
+    {
+      name: 'SVNIT',
+      place: 'Surat',
+      total: 8.8,
+      comp1: 1.2,
+      comp2: 3.4,
+      comp3: 4.2, 
+    },
+    {
+      name: 'NITS',
+      place: 'Silchar',
+      total: 8.8,
+      comp1: 1.2,
+      comp2: 3.4,
+      comp3: 4.2,  
+    },
+    {
+      name: 'NITJ',
+      place: 'Jalandhar',
+      total: 8.8,
+      comp1: 1.2,
+      comp2: 3.4,
+      comp3: 4.2,
+    },
+    {
+      name: 'NITM',
+      place: 'Meghalaya',
+      total: 8.8,
+      comp1: 1.2,
+      comp2: 3.4,
+      comp3: 4.2,  
+    },
+    {
+      name: 'MANIT',
+      place: 'Bhopal',
+      total: 8.8,
+      comp1: 1.2,
+      comp2: 3.4,
+      comp3: 4.2,
+    },
+    {
+      name: 'NITRR',
+      place: 'Raipur',
+      total: 8.8,
+      comp1: 1.2,
+      comp2: 3.4,
+      comp3: 4.2,
+    },
+    {
+      name: 'NITSRI',
+      place: 'Srinagar',
+      total: 8.8,
+      comp1: 1.2,
+      comp2: 3.4,
+      comp3: 4.2    },
+    {
+      name: 'NITP',
+      place: 'Patna',
+      total: 8.8,
+      comp1: 1.2,
+      comp2: 3.4,
+      comp3: 4.2    },
+    {
+      name: 'NITG',
+      place: 'Goa',
+      total: 8.8,
+      comp1: 1.2,
+      comp2: 3.4,
+      comp3: 4.2    },
+    {
+      name: 'NITJSR',
+      place: 'Jamshedpur',
+      total: 8.8,
+      comp1: 1.2,
+      comp2: 3.4,
+      comp3: 4.2    },
+    {
+      name: 'NITA',
+      place: 'Hamirpur',
+      total: 8.8,
+      comp1: 1.2,
+      comp2: 3.4,
+      comp3: 4.2    },
+    {
+      name: 'NITMN',
+      place: 'Manipur',
+      total: 8.8,
+      comp1: 1.2,
+      comp2: 3.4,
+      comp3: 4.2    },
+    {
+      name: 'NITPY',
+      place: 'Puducherry',
+      total: 8.8,
+      comp1: 1.2,
+      comp2: 3.4,
+      comp3: 4.2    },
+    {
+      name: 'NITAP',
+      place: 'Arunchal Pradesh',
+      total: 8.8,
+      comp1: 1.2,
+      comp2: 3.4,
+      comp3: 4.2    },
+    {
+      name: 'NITUK',
+      place: 'Uttarakhand',
+      total: 8.8,
+      comp1: 1.2,
+      comp2: 3.4,
+      comp3: 4.2    },
+    {
+      name: 'NITD',
+      place: 'Delhi',
+      total: 8.8,
+      comp1: 1.2,
+      comp2: 3.4,
+      comp3: 4.2    },
+    {
+      name: 'NITMZ',
+      place: 'Mizoram',
+      total: 8.8,
+      comp1: 1.2,
+      comp2: 3.4,
+      comp3: 4.2    },
+    {
+      name: 'NITN',
+      place: 'Nagaland',
+      total: 8.8,
+      comp1: 1.2,
+      comp2: 3.4,
+      comp3: 4.2    },
+    {
+      name: 'NITSKM',
+      place: 'Sikkim',
+      total: 8.8,
+      comp1: 1.2,
+      comp2: 3.4,
+      comp3: 4.2    },
+    {
+      name: 'NITANP',
+      place: 'Andhra Pradesh',
+      total: 8.8,
+      comp1: 1.2,
+      comp2: 3.4,
+      comp3: 4.2    }
+  ];
+function add_img(img_src)  
+{   //const image = place.split(' ').map((word, index) => index > 0 ? `${word[0].toUpperCase()}${word.slice(1)}` : `${word}` ).join('');
+    var img = document.createElement('img')
+    img.src=images[img_src]
+    document.getElementById('body').appendChild(img)
 
-// target the table element in which to add one div for each driver
-const main = d3
-  .select('table');
+}
+  // target the table element in which to add one div for each driver
+  const main = d3
+    .select('table');
+  
+  // for each driver add one table row
+  // ! add a class to the row to differentiate the rows from the existing one
+  // otherwise the select method would target the existing one and include one row less than the required amount
+  const institutes = main
+    .selectAll('tr.institute')
+    .data(leaderboard)
+    .enter()
+    .append('tr')
+    .attr('class', 'institute');
+  
+  // in each row add the information specified by the dataset in td elements
+  // specify a class to style the elements differently with CSS
+  
+  // position using the index of the data points
+  institutes
+    .append('td')
+    .text((d, i) => i + 1)
+    .attr('class', 'position');
+  
+  institutes
+    .append('td')
+    // include the last name in a separate element to style it differently
+    // include the place also in another element for the same reason
+    .html (({name, place}) => `${name.split(' ').map((part, index) => index > 0 ? `<strong>${part}</strong>` : `${part}`).join(' ')} <span>${place}</span>`)
+    .attr('class', 'institute');
+  
+  // total from the first driver
+  institutes
+    .append('td')
+    .attr('class', 'total')
+    .append('span')
+    .text(({total}) => total);
 
-// for each driver add one table row
-// ! add a class to the row to differentiate the rows from the existing one
-// otherwise the select method would target the existing one and include one row less than the required amount
-const drivers = main
-  .selectAll('tr.driver')
-  .data(leaderboard)
-  .enter()
-  .append('tr')
-  .attr('class', 'driver');
+    institutes
+    .append('td')
+    .attr('class', 'comp1')
+    .append('span')
+    .text(({comp1}) => comp1);
 
-// in each row add the information specified by the dataset in td elements
-// specify a class to style the elements differently with CSS
+    institutes
+    .append('td')
+    .attr('class', 'comp1')
+    .append('span')
+    .text(({comp2}) => comp2); 
 
-// position using the index of the data points
-drivers
-  .append('td')
-  .text((d, i) => i + 1)
-  .attr('class', 'position');
-
-
-// name followed by the team
-drivers
-  .append('td')
-  // include the last name in a separate element to style it differently
-  // include the team also in another element for the same reason
-  .html (({name, team}) => `${name.split(' ').map((part, index) => index > 0 ? `<strong>${part}</strong>` : `${part}`).join(' ')} <span>${team}</span>`)
-  // include a border with the color matching the team
-  .style('border-left', ({team}) => {
-    // find the color using the string value found in d.team
-    // ! if the string value has a space, camelCase the value
-    const color = team.split(' ').map((word, index) => index > 0 ? `${word[0].toUpperCase()}${word.slice(1)}` : `${word}` ).join('');
-    return `4px solid ${colors[color]}`;
-  })
-  .attr('class', 'driver');
-
-// gap from the first driver
-drivers
-  .append('td')
-  .attr('class', 'gap')
-  .append('span')
-  .text(({gap}) => gap);
+    institutes
+    .append('td')
+    .attr('class', 'comp1')
+    .append('span')
+    .text(({comp3}) => comp3); 
