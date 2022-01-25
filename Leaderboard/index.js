@@ -4,7 +4,7 @@ const leaderboard = [
     {
       name: 'NITT',
       place: 'trichy',
-      total: 888888.8,
+      total: 20.8,
       comp1: 1.2,
       comp2: 3.4,
       comp3: 4.2,
@@ -13,7 +13,7 @@ const leaderboard = [
     {
       name: 'NITRKL',
       place: 'Rourkela',
-      total: 8.8,
+      total: 7.8,
       comp1: 1.2,
       comp2: 3.4,
       comp3: 4.2,
@@ -21,7 +21,7 @@ const leaderboard = [
     {
       name: 'NITK',
       place: 'Surathkal',
-      total: 8.8,
+      total: 6.8,
       comp1: 1.2,
       comp2: 3.4,
       comp3: 4.2,
@@ -29,7 +29,7 @@ const leaderboard = [
     {
       name: 'NITW',
       place: 'Warangal',
-      total: 8.8,
+      total: 11.8,
       comp1: 1.2,
       comp2: 3.4,
       comp3: 4.2,
@@ -37,7 +37,7 @@ const leaderboard = [
     {
       name: 'NITDGP',
       place: 'Durgapur',
-      total: 8.8,
+      total: 2.8,
       comp1: 1.2,
       comp2: 3.4,
       comp3: 4.2,
@@ -228,6 +228,21 @@ function add_img(img_src)
     document.getElementById('body').appendChild(img)
 
 }
+
+function compare(a, b) {
+  if(a.total < b.total){
+    return 1;
+  }
+
+  if(a.total > b.total){
+    return -1;
+  }
+
+  if(a.name < b.name){
+    return 1;
+  }
+  return -1;
+}
   // target the table element in which to add one div for each driver
   const main = d3
     .select('table');
@@ -237,7 +252,7 @@ function add_img(img_src)
   // otherwise the select method would target the existing one and include one row less than the required amount
   const institutes = main
     .selectAll('tr.institute')
-    .data(leaderboard)
+    .data(leaderboard.sort(compare))
     .enter()
     .append('tr')
     .attr('class', 'institute');
