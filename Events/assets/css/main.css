@@ -112,6 +112,8 @@ section {
 
 body {
   line-height: 1;
+  display: block !important;
+  overflow: auto !important;
 }
 
 ol,
@@ -4154,6 +4156,7 @@ body.is-preload #wrapper {
   }
 }
 canvas {
+  display: block;
   background: #08233e13;
   position: fixed;
   top: 0;
