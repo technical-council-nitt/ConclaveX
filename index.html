@@ -1,94 +1,60 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 
 <html>
-  <head>
-    <title>conclaveX</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript
-      ><link rel="stylesheet" href="assets/css/noscript.css"
-    /></noscript>
-    <script src="./index.js"></script>
-  </head>
+	<head>
+		<title>conclaveX</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="./index.js"></script>
+	</head>
+	
+	<body class="is-preload">
+		
 
-  <body class="is-preload">
-    <canvas id="canvas"></canvas>
+		<canvas id="canvas"></canvas>
 
-    <header id="header">
-      <div id="center">
-        <h1>NIT CONCLAVE</h1>
-        <p>Annual Inter-NIT Technical symposium</p>
-        <nav>
-          <ul>
-            <li>
-              <a href="Events/index.html" class="icon brands fa-twitter"
-                ><span class="label">Events</span></a
-              >
-            </li>
-            <li>
-              <a href="Leaderboard/index.html" class="icon brands fa-facebook-f"
-                ><span class="label">Leaderboard</span></a
-              >
-            </li>
-            <li>
-              <a href="Timeline/index.html" class="icon brands fa-dribbble"
-                ><span class="label">Timeline</span></a
-              >
-            </li>
-            <li>
-              <a href="Sponsors/index.html" class="icon brands fa-github"
-                ><span class="label">Sponsors</span></a
-              >
-            </li>
-            <li>
-              <a href="#" class="icon solid fa-envelope"
-                ><span class="label">Email</span></a
-              >
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+		<header id="header">
+			<div id='center'>
 
-    <div id="wrapper">
-      <div id="bg"></div>
-      <div id="overlay"></div>
-      <div id="main">
-        <!-- Header -->
-        <!-- <header id="header">
-						<div>
-
-							<h1>NIT CONCLAVE</h1>
-							<p>Annual Inter-NIT Technical symposium</p>
-							<nav>
-								<ul>
-									<li><a href="Events/index.html" class="icon brands fa-twitter"><span class="label">Events</span></a></li>
-									<li><a href="Leaderboard/index.html" class="icon brands fa-facebook-f"><span class="label">Leaderboard</span></a></li>
-									<li><a href="Timeline/index.html" class="icon brands fa-dribbble"><span class="label">Timeline</span></a></li>
-									<li><a href="Sponsors/index.html" class="icon brands fa-github"><span class="label">Sponsors</span></a></li>
-									<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-								</ul>
-							</nav>
-
-						</div>
+				<h1>NIT CONCLAVE</h1>
+				<p>Annual Inter-NIT Technical symposium</p>
+				<a href="#" class="action-btn" style="margin:1rem; text-decoration:none;border: none">
+					<div style="border: 1px solid white; padding:1em 1.5em; border-radius: 2em;display: flex; align-items: center;justify-content: center; gap: .75em;">
+						<p style="font-size: 1.5rem; font-weight: 600;margin: 0;">Enter the Metaverse</p>
+						<i class="fa fa-arrow-right arrow" style="margin-top: .25rem;"></i>
 						
-					</header> -->
-      </div>
-    </div>
-    <script>
-      window.onload = function () {
-        document.body.classList.remove("is-preload");
-      };
-      window.ontouchmove = function () {
-        return false;
-      };
-      window.onorientationchange = function () {
-        document.body.scrollTop = 0;
-      };
-    </script>
-  </body>
+					</div>
+				</a>
+				<nav>
+					<ul>
+						<li><a href="Events/index.html" class="icon fa-calendar"><span class="label">Events</span></a></li>
+						<li><a href="Leaderboard/index.html" class="icon fa-trophy"><span class="label">Leaderboard</span></a></li>
+						<li><a href="Timeline/index.html" class="icon fa-hourglass"><span class="label">Timeline</span></a></li>
+						<li><a href="Sponsors/index.html" class="icon fa-handshake"><span class="label">Sponsors</span></a></li>
+					</ul>
+				</nav>
+
+			</div>
+			
+		</header>
+
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
+
+			</div>
+		</div>
+
+		<footer class="footer">
+			<p>Made with <a href="#" style="border:none">💓</a> by Technical Council</p>
+		</footer>
+		<script>
+			window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+	</body>
 </html>

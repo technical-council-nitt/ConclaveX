@@ -1116,3 +1116,30 @@ canvas {
 	width: 100%;
 	height: 100%;
 }
+
+.footer {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 100;
+	padding: .75em 0;
+	font-weight: 500;
+	font-size: 1.25rem;
+}
+
+.action-btn:hover {
+	transform: scale(1.125);
+	transition: 0.25s ease-in-out;
+}
+
+.action-btn:hover .arrow {
+	transform: translate(8px, 0px) scale(1.2);
+	transition: 0.25s ease-in-out;
+}
+/* .arrow:hover {
+	transform: translate(10px, 0px) scale(1.2);
+	transition: 0.25s ease-in-out;
+} */

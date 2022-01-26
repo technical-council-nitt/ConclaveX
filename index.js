@@ -23,7 +23,7 @@ const runOnTime = function(){
     //draw flakes 
     function drawFlakes(){
       ctx.clearRect(0, 0, w, h);
-      ctx.fillStyle = "white";
+      ctx.fillStyle = "yellow";
       ctx.beginPath();
       for(var i = 0; i < mf; i++){
          var f = flakes[i];
