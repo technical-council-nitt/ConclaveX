@@ -8,7 +8,7 @@ const runOnTime = function(){
     canvas.height = h;
     canvas.width  = w;
   // Generate snowflakes 
-    var mf = 200; // max flakes
+    var mf = 225; // max flakes
     var flakes = [];
    // loop through the empty flakes 
     for(var i = 0; i < mf; i++){
