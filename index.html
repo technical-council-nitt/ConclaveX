@@ -1,60 +1,107 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 
 <html>
-	<head>
-		<title>ConclaveX | Home</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<script src="./index.js"></script>
-	</head>
-	
-	<body class="is-preload">
-		
+  <head>
+    <title>ConclaveX | Home</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+    <script src="./index.js"></script>
+  </head>
 
-		<canvas id="canvas"></canvas>
+  <body class="is-preload">
+    <canvas id="canvas"></canvas>
 
-		<header id="header">
-			<div id='center'>
+    <header id="header">
+      <div id="center">
+        <h1>NIT CONCLAVE</h1>
+        <p>Annual Inter-NIT Technical symposium</p>
+        <a
+          href="https://www.gmetri.com/"
+          class="action-btn"
+          style="margin: 1rem; text-decoration: none; border: none"
+        >
+          <div
+            style="
+              border: 1px solid rgb(255, 235, 119);
+              padding: 1em 1.5em;
+              border-radius: 2em;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 0.75em;
+            "
+          >
+            <p
+              style="
+                font-size: 1.5rem;
+                font-weight: 600;
+                margin: 0;
+                color: rgb(243, 219, 140);
+              "
+            >
+              Enter the Metaverse
+            </p>
+            <i
+              class="fa fa-arrow-right arrow"
+              style="margin-top: 0.25rem; color: rgb(243, 219, 140)"
+            ></i>
+          </div>
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a href="Events/index.html" class="fa fa-calendar"
+                ><span class="label">Events</span></a
+              >
+            </li>
+            <li>
+              <a href="Leaderboard/index.html" class="fa fa-trophy"
+                ><span class="label">Leaderboard</span></a
+              >
+            </li>
+            <li>
+              <a href="Timeline/index.html" class="fa fa-hourglass"
+                ><span class="label">Timeline</span></a
+              >
+            </li>
+            <li>
+              <a href="Sponsors/index.html" class="fa fa-handshake"
+                ><span class="label">Sponsors</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-				<h1>NIT CONCLAVE</h1>
-				<p>Annual Inter-NIT Technical symposium</p>
-				<a href="https://www.gmetri.com/" class="action-btn" style="margin:1rem; text-decoration:none;border: none">
-					<div style="border: 1px solid white; padding:1em 1.5em; border-radius: 2em;display: flex; align-items: center;justify-content: center; gap: .75em;">
-						<p style="font-size: 1.5rem; font-weight: 600;margin: 0;">Enter the Metaverse</p>
-						<i class="fa fa-arrow-right arrow" style="margin-top: .25rem;"></i>
-						
-					</div>
-				</a>
-				<nav>
-					<ul>
-						<li><a href="Events/index.html" class="fa fa-calendar"><span class="label">Events</span></a></li>
-						<li><a href="Leaderboard/index.html" class="fa fa-trophy"><span class="label">Leaderboard</span></a></li>
-						<li><a href="Timeline/index.html" class="fa fa-hourglass"><span class="label">Timeline</span></a></li>
-						<li><a href="Sponsors/index.html" class="fa fa-handshake"><span class="label">Sponsors</span></a></li>
-					</ul>
-				</nav>
+    <div id="wrapper">
+      <div id="bg"></div>
+      <div id="overlay"></div>
+      <div id="main"></div>
+    </div>
 
-			</div>
-			
-		</header>
-
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="main">
-
-			</div>
-		</div>
-
-		<footer class="footer">
-			<p>Made with <a href="#" style="border:none">💓</a> by Technical Council</p>
-		</footer>
-		<script>
-			window.onload = function() { document.body.classList.remove('is-preload'); }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
-		</script>
-	</body>
+    <footer class="footer">
+      <p>
+        Made with <a href="#" style="border: none">💓</a> by Technical Council
+      </p>
+    </footer>
+    <script>
+      window.onload = function () {
+        document.body.classList.remove("is-preload");
+      };
+      window.ontouchmove = function () {
+        return false;
+      };
+      window.onorientationchange = function () {
+        document.body.scrollTop = 0;
+      };
+    </script>
+  </body>
 </html>
