@@ -4,7 +4,7 @@
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   *zoom: 1;
-  font-family: "Open Sans", "Helvetica", sans-serif;
+  /* font-family: "Open Sans", "Helvetica", sans-serif; */
   font-weight: 300;
   margin: 0;
   padding: 0;
@@ -28,7 +28,7 @@ body {
   top: 50%;
   left:50%;
   margin-left:-35%;
-  margin-top: -15%;
+  margin-top: -30%;
   max-width: 70%;
   /* width: 700px; */
   /* max-height: 340px; */
@@ -136,9 +136,23 @@ canvas {
   height: 100%;
   z-index: -20;
 }
-
+/* 
 .title {
   color: d8d8d8;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Rubik", sans-serif !important;
+  margin-top: 5rem;
+  color: #d8d8d8;
+  font-size: 3.5rem;
+} */
+
+span {
+  background: rgba(0,0,0,0) !important;
+}
+
+#sponsorTitle {
   width: 100%;
   text-align: center;
   /* margin-top: 8%; */
@@ -148,8 +162,5 @@ canvas {
   margin-top: 5rem;
   color: #d8d8d8;
   font-size: 3.5rem;
-}
-
-span {
-  background: rgba(0,0,0,0) !important;
+  padding-bottom: 20px;
 }
