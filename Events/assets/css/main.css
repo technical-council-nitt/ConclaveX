@@ -4165,3 +4165,26 @@ canvas {
   height: 100%;
   z-index: 20;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-thumb {
+  /* @apply rounded-lg bg-gray-600; */
+  border-radius: 0.5rem;
+  background-color: orange;
+}
+
+/* Handle */
+::-webkit-scrollbar-track {
+  background-color: rgb(20, 20, 20);
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  /* @apply bg-gray-500 transition duration-200; */
+  /* background: rgba(80, 80, 80); */
+  background-color: rgb(255, 217, 0);
+  transition: 0.25s ease-in-out;
+}
