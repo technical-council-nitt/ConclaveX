@@ -4,234 +4,148 @@ const leaderboard = [
     name: "NITT",
     place: "trichy",
     total: 20.8,
-    comp1: 1.2,
-    comp2: 3.4,
-    comp3: 4.2,
+
     img: "logos/trichy.png",
   },
   {
     name: "NITRKL",
     place: "Rourkela",
     total: 7.8,
-    comp1: 1.2,
-    comp2: 3.4,
-    comp3: 4.2,
   },
   {
     name: "NITK",
     place: "Surathkal",
     total: 6.8,
-    comp1: 1.2,
-    comp2: 3.4,
-    comp3: 4.2,
   },
   {
     name: "NITW",
     place: "Warangal",
     total: 11.8,
-    comp1: 1.2,
-    comp2: 3.4,
-    comp3: 4.2,
   },
   {
     name: "NITDGP",
     place: "Durgapur",
     total: 2.8,
-    comp1: 1.2,
-    comp2: 3.4,
-    comp3: 4.2,
   },
   {
     name: "VNIT",
     place: "Nagpur",
     total: 8.8,
-    comp1: 1.2,
-    comp2: 3.4,
-    comp3: 4.2,
   },
   {
     name: "MNIT",
     place: "Jaipur",
     total: 8.8,
-    comp1: 1.2,
-    comp2: 3.4,
-    comp3: 4.2,
   },
   {
     name: "MNNIT",
     place: "Allahabad",
     total: 8.8,
-    comp1: 1.2,
-    comp2: 3.4,
-    comp3: 4.2,
   },
   {
     name: "NITKKR",
     place: "Kurukshetra",
     total: 8.8,
-    comp1: 1.2,
-    comp2: 3.4,
-    comp3: 4.2,
   },
   {
     name: "SVNIT",
     place: "Surat",
     total: 8.8,
-    comp1: 1.2,
-    comp2: 3.4,
-    comp3: 4.2,
   },
   {
     name: "NITS",
     place: "Silchar",
     total: 8.8,
-    comp1: 1.2,
-    comp2: 3.4,
-    comp3: 4.2,
   },
   {
     name: "NITJ",
     place: "Jalandhar",
     total: 8.8,
-    comp1: 1.2,
-    comp2: 3.4,
-    comp3: 4.2,
   },
   {
     name: "NITM",
     place: "Meghalaya",
     total: 8.8,
-    comp1: 1.2,
-    comp2: 3.4,
-    comp3: 4.2,
   },
   {
     name: "MANIT",
     place: "Bhopal",
     total: 8.8,
-    comp1: 1.2,
-    comp2: 3.4,
-    comp3: 4.2,
   },
   {
     name: "NITRR",
     place: "Raipur",
     total: 8.8,
-    comp1: 1.2,
-    comp2: 3.4,
-    comp3: 4.2,
   },
   {
     name: "NITSRI",
     place: "Srinagar",
     total: 8.8,
-    comp1: 1.2,
-    comp2: 3.4,
-    comp3: 4.2,
   },
   {
     name: "NITP",
     place: "Patna",
     total: 8.8,
-    comp1: 1.2,
-    comp2: 3.4,
-    comp3: 4.2,
   },
   {
     name: "NITG",
     place: "Goa",
     total: 8.8,
-    comp1: 1.2,
-    comp2: 3.4,
-    comp3: 4.2,
   },
   {
     name: "NITJSR",
     place: "Jamshedpur",
     total: 8.8,
-    comp1: 1.2,
-    comp2: 3.4,
-    comp3: 4.2,
   },
   {
     name: "NITA",
     place: "Hamirpur",
     total: 8.8,
-    comp1: 1.2,
-    comp2: 3.4,
-    comp3: 4.2,
   },
   {
     name: "NITMN",
     place: "Manipur",
     total: 8.8,
-    comp1: 1.2,
-    comp2: 3.4,
-    comp3: 4.2,
   },
   {
     name: "NITPY",
     place: "Puducherry",
     total: 8.8,
-    comp1: 1.2,
-    comp2: 3.4,
-    comp3: 4.2,
   },
   {
     name: "NITAP",
     place: "Arunchal Pradesh",
     total: 8.8,
-    comp1: 1.2,
-    comp2: 3.4,
-    comp3: 4.2,
   },
   {
     name: "NITUK",
     place: "Uttarakhand",
     total: 8.8,
-    comp1: 1.2,
-    comp2: 3.4,
-    comp3: 4.2,
   },
   {
     name: "NITD",
     place: "Delhi",
     total: 8.8,
-    comp1: 1.2,
-    comp2: 3.4,
-    comp3: 4.2,
   },
   {
     name: "NITMZ",
     place: "Mizoram",
     total: 8.8,
-    comp1: 1.2,
-    comp2: 3.4,
-    comp3: 4.2,
   },
   {
     name: "NITN",
     place: "Nagaland",
     total: 8.8,
-    comp1: 1.2,
-    comp2: 3.4,
-    comp3: 4.2,
   },
   {
     name: "NITSKM",
     place: "Sikkim",
     total: 8.8,
-    comp1: 1.2,
-    comp2: 3.4,
-    comp3: 4.2,
   },
   {
     name: "NITANP",
     place: "Andhra Pradesh",
     total: 8.8,
-    comp1: 1.2,
-    comp2: 3.4,
-    comp3: 4.2,
   },
 ];
 function add_img(img_src) {
@@ -299,20 +213,20 @@ institutes
   .append("span")
   .text(({ total }) => total);
 
-institutes
-  .append("td")
-  .attr("class", "comp1")
-  .append("span")
-  .text(({ comp1 }) => comp1);
+// institutes
+//   .append("td")
+//   .attr("class", "comp1")
+//   .append("span")
+//   .text(({ comp1 }) => comp1);
 
-institutes
-  .append("td")
-  .attr("class", "comp1")
-  .append("span")
-  .text(({ comp2 }) => comp2);
+// institutes
+//   .append("td")
+//   .attr("class", "comp1")
+//   .append("span")
+//   .text(({ comp2 }) => comp2);
 
-institutes
-  .append("td")
-  .attr("class", "comp1")
-  .append("span")
-  .text(({ comp3 }) => comp3);
+// institutes
+//   .append("td")
+//   .attr("class", "comp1")
+//   .append("span")
+//   .text(({ comp3 }) => comp3);

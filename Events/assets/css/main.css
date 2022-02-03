@@ -4174,7 +4174,7 @@ canvas {
 ::-webkit-scrollbar-thumb {
   /* @apply rounded-lg bg-gray-600; */
   border-radius: 0.5rem;
-  background-color: orange;
+  background-color: rgb(255, 187, 0);
 }
 
 /* Handle */

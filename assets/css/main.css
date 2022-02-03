@@ -1276,3 +1276,19 @@ canvas {
 	transform: translate(10px, 0px) scale(1.2);
 	transition: 0.25s ease-in-out;
 } */
+
+button,
+button::after {
+  width: 360px;
+  height: 86px;
+  font-size: 36px;
+  font-family: sans-serif;
+  border: 0;
+  background: linear-gradient(45deg, transparent 5%, #ff0136 5%);
+  color: #fff;
+  letter-spacing: 3px;
+  line-height: 88px;
+  box-shadow: 6px 0px 0px #00e6f6;
+  outline: transparent;
+  position: relative;
+}

@@ -22,7 +22,7 @@ body {
 }
 h1 {
   margin-top: 5rem;
-  color: #d8d8d8;
+  color: #ebebeb;
   font-size: 3.5rem;
   /* font-family: 'JetBrains Mono'; */
 }
@@ -41,16 +41,17 @@ h1 {
 } */
 table {
   /* position relative to include a band on the left of the container */
-  margin-top: 3rem;
+  margin-top: 2rem;
   position: relative;
   /* cap the width of the table, allowing for a sizeable portion of white space if allowed by the viewport */
   width: calc(90vw - 2rem);
   max-width: 1000px;
   /* spacing to separate the table rows vertically */
   border-spacing: 0 1rem;
-  background-color: rgba(0, 0, 20, 0.5);
+  background-color: rgba(0, 0, 20, 0.7);
   border-radius: 30px;
   padding: 10px;
+  z-index: 100;
 }
 /* with a pseudo element add a band with a repeating linear gradient */
 table:before {
@@ -110,6 +111,7 @@ table td.institute span {
 }
 
 /* style the span nested in the last cell to have the gap in a rounded rectangle */
+
 table td.total span {
   background: #38383f;
   border-radius: 30px;
@@ -118,34 +120,62 @@ table td.total span {
   text-transform: uppercase;
 }
 
-table td.comp1 span {
-  /* background: #38383F;
-  border-radius: 30px;
-  padding: 0.5rem 0.75rem; */
-  font-size: 1rem;
-  text-transform: uppercase;
+table tr:not(:first-child) {
+  cursor: pointer;
 }
 
-table td.comp2 span {
-  /* background: #38383F;
-  border-radius: 30px;
-  padding: 0.5rem 0.75rem; */
-  font-size: 1rem;
-  text-transform: uppercase;
+/* for 1st price */
+table tr:nth-child(2) td.total span {
+  background: gold;
 }
 
-table td.comp3 span {
-  /* background: #38383F;
-  border-radius: 30px;
-  padding: 0.5rem 0.75rem; */
-  font-size: 1rem;
-  text-transform: uppercase;
+/* for 2nd price */
+table tr:nth-child(3) td.total span {
+  background: silver;
+}
+
+/* for 3rd price */
+table tr:nth-child(4) td.total span {
+  background: #cd7f32;
+}
+
+@media (max-width: 750px) {
+  h1 {
+    font-size: 36px;
+  }
 }
 
 /* on smaller viewports remove the third column from sight */
 @media (max-width: 500px) {
-  table tr > *:nth-child(3) {
+  /* table tr > *:nth-child(3) {
     display: none;
+  } */
+  table {
+    width: 100%;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  table td.institute span {
+    display: none;
+  }
+  table td.total {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .points {
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  table {
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 26px;
   }
 }
 
@@ -167,7 +197,7 @@ canvas {
 ::-webkit-scrollbar-thumb {
   /* @apply rounded-lg bg-gray-600; */
   border-radius: 0.5rem;
-  background-color: orange;
+  background-color: rgb(255, 187, 0);
 }
 
 /* Handle */
