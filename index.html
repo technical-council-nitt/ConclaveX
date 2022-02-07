@@ -9,6 +9,7 @@
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="transitions.css" />
     <noscript
       ><link rel="stylesheet" href="assets/css/noscript.css"
     /></noscript>
@@ -16,6 +17,7 @@
   </head>
 
   <body class="is-preload">
+    <div class="transition transition-3 is-active"></div>
     <canvas id="canvas"></canvas>
 
     <header id="header">
@@ -91,6 +93,22 @@
     <script>
       window.onload = function () {
         document.body.classList.remove("is-preload");
+        const transition_el = document.querySelector(".transition");
+        const anchors = document.querySelectorAll("a");
+        setTimeout(() => {
+          transition_el.classList.remove("is-active");
+        }, 500);
+        for (let i = 0; i < anchors.length; i++) {
+          const anchor = anchors[i];
+          anchor.addEventListener("click", (e) => {
+            e.preventDefault();
+            let target = e.target.href;
+            transition_el.classList.add("is-active");
+            setTimeout(() => {
+              window.location.href = target;
+            }, 500);
+          });
+        }
       };
       window.ontouchmove = function () {
         return false;

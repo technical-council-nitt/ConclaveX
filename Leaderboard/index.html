@@ -4,10 +4,12 @@
     <title>ConclaveX | Leaderboard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="../transitions.css" />
     <!-- <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script> -->
     <script src="rand.js" charset="utf-8"></script>
   </head>
   <body>
+    <div class="transition transition-2 is-active"></div>
     <canvas id="canvas"></canvas>
     <h1>CONCLAVE LEADERBOARD</h1>
 
@@ -21,6 +23,15 @@
         <th>Comp3</th> -->
       </tr>
     </table>
+    <script>
+      window.onload = function () {
+        document.body.classList.remove("is-preload");
+        const transition_el = document.querySelector(".transition");
+        setTimeout(() => {
+          transition_el.classList.remove("is-active");
+        }, 500);
+      };
+    </script>
 
     <script type="text/javascript" src="index.js"></script>
     <script type="text/javascript" src="../index.js"></script>
