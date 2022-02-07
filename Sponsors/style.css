@@ -48,7 +48,7 @@ table {
   max-width: 1000px;
   /* spacing to separate the table rows vertically */
   border-spacing: 0 1rem;
-  background-color: rgba(0, 0, 20, 0.7);
+  /* background-color: rgba(0, 0, 20, 0.7); */
   border-radius: 30px;
   padding: 10px;
   z-index: 100;
@@ -63,7 +63,7 @@ table {
   max-width: 1000px;
   /* spacing to separate the table rows vertically */
   border-spacing: 0 1rem;
-  background-color: rgba(0, 0, 20, 0.5);
+  /* background-color: rgba(0, 0, 20, 0.5); */
   border-radius: 30px;
   padding: 10px;
   z-index: 100;
@@ -129,7 +129,7 @@ table td.institute span {
 /* style the span nested in the last cell to have the gap in a rounded rectangle */
 
 table td.total span {
-  background: #38383f;
+  /* background: #38383f; */
   border-radius: 30px;
   padding: 0.5rem 0.75rem;
   font-size: 1rem;
@@ -243,7 +243,7 @@ canvas {
   /* width: 700px; */
   /* max-height: 340px; */
   /* height: 340px; */
-  box-shadow: 2px 3px 0 0 rgba(0, 0, 0, 0.2), 0px -340px 0 0 rgba(0, 0, 0, 0.3);
+  /* box-shadow: 2px 3px 0 0 rgba(0, 0, 0, 0.2), 0px -340px 0 0 rgba(0, 0, 0, 0.3); */
   overflow: auto;
 }
 /* Sponsors Footer */
