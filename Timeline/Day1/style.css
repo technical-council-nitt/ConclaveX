@@ -1,12 +1,14 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 html,
 body,
 .container {
   height: 100%;
 }
-body {
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-}
+/* * {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+} */
+
 .container {
   display: flex;
   justify-content: center;
@@ -343,4 +345,10 @@ canvas {
   /* background: rgba(80, 80, 80); */
   background-color: rgb(255, 217, 0);
   transition: 0.25s ease-in-out;
+}
+
+.events {
+  font-size: 1.4rem;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
 }

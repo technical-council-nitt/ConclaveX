@@ -10,7 +10,7 @@ var words = [
   forwards = true,
   skip_count = 0,
   skip_delay = 15,
-  speed = 70;
+  speed = 100;
 var wordflick = function () {
   console.log("working");
   setInterval(function () {
