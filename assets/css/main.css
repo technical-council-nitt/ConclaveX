@@ -662,7 +662,7 @@ a:hover {
 #header p {
   font-size: 1.25em;
   margin: 0.75em 0 0.25em 0;
-  opacity: 0.75;
+  opacity: 0.9;
 }
 
 #header nav {
@@ -1003,10 +1003,10 @@ a:hover {
     }
   }
 
-  #bg {
+  /* #bg {
     background-size: 750px auto;
     width: 2250px;
-  }
+  } */
 }
 
 /* Mobile */
@@ -1091,10 +1091,10 @@ a:hover {
     }
   }
 
-  #bg {
+  /* #bg {
     background-size: 300px auto;
     width: 900px;
-  }
+  } */
 
   /* Header */
 
@@ -1188,10 +1188,10 @@ a:hover {
     }
   }
 
-  #bg {
+  /* #bg {
     background-size: 412.5px auto;
     width: 1237.5px;
-  }
+  } */
 
   /* Header */
 
@@ -1290,3 +1290,64 @@ canvas {
 /* body {
   cursor: url(https://robohash.org/autdolornisi.png?size=50x50&set=set1);
 } */
+
+.left-logo {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 100;
+}
+
+.left-logo img {
+  width: 90px;
+  height: 90px;
+}
+
+.right-logo img {
+  width: 150px;
+  height: 150px;
+}
+
+.right-logo {
+  position: absolute;
+  top: -5px;
+  right: -20px;
+  z-index: 100;
+}
+
+@media (max-width: 500px) {
+  .left-logo img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .right-logo img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .left-logo {
+    position: absolute;
+    top: 10px;
+    left: 6px;
+    z-index: 100;
+  }
+  .right-logo {
+    position: absolute;
+    top: -15px;
+    right: -30px;
+    z-index: 100;
+  }
+}
+
+.word {
+  margin: auto;
+  height: 32px;
+  z-index: 100;
+  color: white;
+  /* font: 700 normal 2.5rem; */
+  font-size: 32px;
+  margin-top: 20px;
+  font-family: "Source Sans Pro", sans-serif;
+  /* text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324; */
+}
