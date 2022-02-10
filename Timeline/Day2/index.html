@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>ConclaveX Timeline</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../transitions.css" />
+  </head>
+  <body class="is-preload">
+    <!-- <div class="transition transition-3 is-active"></div> -->
+    <canvas id="canvas" style="z-index: 10"></canvas>
+    <div class="container" style="background-image: url('bg.jpg')">
+      <!-- <h1 class="conclaveHeader" style="color: rgb(248, 239, 239)">Timeline</h1> -->
+      <!-- <h1 class="title">ConclaveX Timeline</h1> -->
+      <div class="timeline">
+        <!-- <canvas id="canvas"></canvas> -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div
+              class="swiper-slide"
+              style="
+                background-image: url(https://picsum.photos/1920/500?random=1);
+              "
+              data-year="12:00 am"
+            >
+              <div class="swiper-slide-content">
+                <!-- <span class="timeline-year">Day1</span> -->
+                <h4 class="timeline-title">Your Event Title</h4>
+                <p class="timeline-text">
+                  Lorem ipsum dolor site amet, consectetur adipscing elit, sed
+                  do eisumod tempor incididut ut labore et dolore magna aliqua.
+                  Ut enim ad mimim venjam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+            <div
+              class="swiper-slide"
+              style="
+                background-image: url(https://picsum.photos/1920/500?random=2);
+              "
+              data-year="12:00 am"
+            >
+              <div class="swiper-slide-content">
+                <!-- <span class="timeline-year">Day2</span> -->
+                <h4 class="timeline-title">Your Event Title</h4>
+                <p class="timeline-text">
+                  Lorem ipsum dolor site amet, consectetur adipscing elit, sed
+                  do eisumod tempor incididut ut labore et dolore magna aliqua.
+                  Ut enim ad mimim venjam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+            <div
+              class="swiper-slide"
+              style="
+                background-image: url(https://picsum.photos/1920/500?random=3);
+              "
+              data-year="12:00 am"
+            >
+              <div class="swiper-slide-content">
+                <!-- <span class="timeline-year">Day3</span> -->
+                <h4 class="timeline-title">Your Event Title</h4>
+                <p class="timeline-text">
+                  Lorem ipsum dolor site amet, consectetur adipscing elit, sed
+                  do eisumod tempor incididut ut labore et dolore magna aliqua.
+                  Ut enim ad mimim venjam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+            <div
+              class="swiper-slide"
+              style="
+                background-image: url(https://picsum.photos/1920/500?random=4);
+              "
+              data-year="12:00 am"
+            >
+              <div class="swiper-slide-content">
+                <!-- <span class="timeline-year">Day4</span> -->
+                <h4 class="timeline-title">Your Event Title</h4>
+                <p class="timeline-text">
+                  Lorem ipsum dolor site amet, consectetur adipscing elit, sed
+                  do eisumod tempor incididut ut labore et dolore magna aliqua.
+                  Ut enim ad mimim venjam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+            <div
+              class="swiper-slide"
+              style="
+                background-image: url(https://picsum.photos/1920/500?random=5);
+              "
+              data-year="12:00 am"
+            >
+              <div class="swiper-slide-content">
+                <!-- <span class="timeline-year">Day5</span> -->
+                <h4 class="timeline-title">Your Event Title</h4>
+                <p class="timeline-text">
+                  Lorem ipsum dolor site amet, consectetur adipscing elit, sed
+                  do eisumod tempor incididut ut labore et dolore magna aliqua.
+                  Ut enim ad mimim venjam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+            <!-- <div
+              class="swiper-slide"
+              style="
+                background-image: url(https://picsum.photos/1920/500?random=6);
+              "
+              data-year="Day6"
+            >
+              <div class="swiper-slide-content">
+                <span class="timeline-year">2012</span>
+                <h4 class="timeline-title">Your Event Title</h4>
+                <p class="timeline-text">
+                  Lorem ipsum dolor site amet, consectetur adipscing elit, sed
+                  do eisumod tempor incididut ut labore et dolore magna aliqua.
+                  Ut enim ad mimim venjam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div> -->
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+    <!-- <script>
+      window.onload = function () {
+        document.body.classList.remove("is-preload");
+        const transition_el = document.querySelector(".transition");
+        setTimeout(() => {
+          transition_el.classList.remove("is-active");
+        }, 500);
+      };
+    </script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+    <script src="function.js"></script>
+    <script src="../index.js"></script>
+  </body>
+</html>

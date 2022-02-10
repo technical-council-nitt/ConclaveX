@@ -2,149 +2,148 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>ConclaveX Timeline</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800"
-    />
-    <link rel="stylesheet" href="style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="transitions.css" />
+    <title>Document</title>
   </head>
-  <body class="is-preload">
-    <canvas id="canvas" style="z-index: 10"></canvas>
-    <div class="container" style="background-image: url('bg.jpg')">
-      <!-- <h1 class="conclaveHeader" style="color: rgb(248, 239, 239)">Timeline</h1> -->
-      <!-- <h1 class="title">ConclaveX Timeline</h1> -->
-      <div class="timeline">
-        <!-- <canvas id="canvas"></canvas> -->
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div
-              class="swiper-slide"
-              style="
-                background-image: url(https://picsum.photos/1920/500?random=1);
-              "
-              data-year="Day1"
-            >
-              <div class="swiper-slide-content">
-                <span class="timeline-year">Day1</span>
-                <h4 class="timeline-title">Your Event Title</h4>
-                <p class="timeline-text">
-                  Lorem ipsum dolor site amet, consectetur adipscing elit, sed
-                  do eisumod tempor incididut ut labore et dolore magna aliqua.
-                  Ut enim ad mimim venjam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-              </div>
-            </div>
-            <div
-              class="swiper-slide"
-              style="
-                background-image: url(https://picsum.photos/1920/500?random=2);
-              "
-              data-year="Day2"
-            >
-              <div class="swiper-slide-content">
-                <span class="timeline-year">Day2</span>
-                <h4 class="timeline-title">Your Event Title</h4>
-                <p class="timeline-text">
-                  Lorem ipsum dolor site amet, consectetur adipscing elit, sed
-                  do eisumod tempor incididut ut labore et dolore magna aliqua.
-                  Ut enim ad mimim venjam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-              </div>
-            </div>
-            <div
-              class="swiper-slide"
-              style="
-                background-image: url(https://picsum.photos/1920/500?random=3);
-              "
-              data-year="Day3"
-            >
-              <div class="swiper-slide-content">
-                <span class="timeline-year">Day3</span>
-                <h4 class="timeline-title">Your Event Title</h4>
-                <p class="timeline-text">
-                  Lorem ipsum dolor site amet, consectetur adipscing elit, sed
-                  do eisumod tempor incididut ut labore et dolore magna aliqua.
-                  Ut enim ad mimim venjam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-              </div>
-            </div>
-            <div
-              class="swiper-slide"
-              style="
-                background-image: url(https://picsum.photos/1920/500?random=4);
-              "
-              data-year="Day4"
-            >
-              <div class="swiper-slide-content">
-                <span class="timeline-year">Day4</span>
-                <h4 class="timeline-title">Your Event Title</h4>
-                <p class="timeline-text">
-                  Lorem ipsum dolor site amet, consectetur adipscing elit, sed
-                  do eisumod tempor incididut ut labore et dolore magna aliqua.
-                  Ut enim ad mimim venjam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-              </div>
-            </div>
-            <div
-              class="swiper-slide"
-              style="
-                background-image: url(https://picsum.photos/1920/500?random=5);
-              "
-              data-year="Day5"
-            >
-              <div class="swiper-slide-content">
-                <span class="timeline-year">Day5</span>
-                <h4 class="timeline-title">Your Event Title</h4>
-                <p class="timeline-text">
-                  Lorem ipsum dolor site amet, consectetur adipscing elit, sed
-                  do eisumod tempor incididut ut labore et dolore magna aliqua.
-                  Ut enim ad mimim venjam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-              </div>
-            </div>
-            <!-- <div
-              class="swiper-slide"
-              style="
-                background-image: url(https://picsum.photos/1920/500?random=6);
-              "
-              data-year="Day6"
-            >
-              <div class="swiper-slide-content">
-                <span class="timeline-year">2012</span>
-                <h4 class="timeline-title">Your Event Title</h4>
-                <p class="timeline-text">
-                  Lorem ipsum dolor site amet, consectetur adipscing elit, sed
-                  do eisumod tempor incididut ut labore et dolore magna aliqua.
-                  Ut enim ad mimim venjam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-              </div>
-            </div> -->
-          </div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
+  <body>
+    <!-- <div class="transition transition-3 is-active"></div> -->
+    <canvas id="canvas"></canvas>
+    <div class="grid">
+      <button
+        class="grid__item grid__item--rose grid__item--lg grid__item--1 glow"
+      >
+        <span class="grid__item-door glow">
+          <a href="./Day1/index.html" text-decoration: none> 4 </a>
+        </span>
+        <span class="grid__item-shadow"></span>
+      </button>
+      <button class="grid__item grid__item--2">
+        <span class="grid__item-door"> 2 </span>
+        <span class="grid__item-shadow"></span>
+      </button>
+      <button class="grid__item grid__item--lg grid__item--3">
+        <span class="grid__item-door"> 3 </span>
+        <span class="grid__item-shadow"></span>
+      </button>
+      <button class="grid__item grid__item--rose grid__item--lg grid__item--4">
+        <span class="grid__item-door glow">
+          <a href="./Day3/index.html"> 6 </a>
+        </span>
+        <span class="grid__item-shadow"></span>
+      </button>
+      <button class="grid__item grid__item--5">
+        <span class="grid__item-door"> 1 </span>
+        <span class="grid__item-shadow"></span>
+      </button>
+      <button class="grid__item grid__item--rose grid__item--lg grid__item--6">
+        <span class="grid__item-door glow">
+          <a href="./Day2/index.html"> 5 </a>
+        </span>
+        <span class="grid__item-shadow"></span>
+      </button>
+      <button class="grid__item grid__item--7">
+        <span class="grid__item-door"> 7 </span>
+        <span class="grid__item-shadow"></span>
+      </button>
+      <button class="grid__item grid__item--8">
+        <span class="grid__item-door"> 8 </span>
+        <span class="grid__item-shadow"></span>
+      </button>
+      <button class="grid__item grid__item--9">
+        <span class="grid__item-door"> 9 </span>
+        <span class="grid__item-shadow"></span>
+      </button>
+      <button class="grid__item grid__item--10">
+        <span class="grid__item-door"> 10 </span>
+        <span class="grid__item-shadow"></span>
+      </button>
+      <button class="grid__item grid__item--sky grid__item--11">
+        <span class="grid__item-door"> 11 </span>
+        <span class="grid__item-shadow"></span>
+      </button>
+      <button class="grid__item grid__item--12">
+        <span class="grid__item-door"> 12 </span>
+        <span class="grid__item-shadow"></span>
+      </button>
+      <button class="grid__item grid__item--moss grid__item--lg grid__item--13">
+        <span class="grid__item-door"> 13 </span>
+        <span class="grid__item-shadow"></span>
+      </button>
+      <button class="grid__item grid__item--14">
+        <span class="grid__item-door"> 14 </span>
+        <span class="grid__item-shadow"></span>
+      </button>
+      <button class="grid__item grid__item--moss grid__item--15">
+        <span class="grid__item-door"> 15 </span>
+        <span class="grid__item-shadow"></span>
+      </button>
+      <button class="grid__item grid__item--16">
+        <span class="grid__item-door"> 16 </span>
+        <span class="grid__item-shadow"></span>
+      </button>
+      <button class="grid__item grid__item--17">
+        <span class="grid__item-door"> 17 </span>
+        <span class="grid__item-shadow"></span>
+      </button>
+      <button class="grid__item grid__item--sky grid__item--18">
+        <span class="grid__item-door"> 18 </span>
+        <span class="grid__item-shadow"></span>
+      </button>
+      <button class="grid__item grid__item--sun grid__item--19">
+        <span class="grid__item-door"> 19 </span>
+        <span class="grid__item-shadow"></span>
+      </button>
+      <button class="grid__item grid__item--20">
+        <span class="grid__item-door"> 20 </span>
+        <span class="grid__item-shadow"></span>
+      </button>
+      <button class="grid__item grid__item--sun grid__item--lg grid__item--21">
+        <span class="grid__item-door"> 21 </span>
+        <span class="grid__item-shadow"></span>
+      </button>
+      <button class="grid__item grid__item--sun grid__item--22">
+        <span class="grid__item-door"> 22 </span>
+        <span class="grid__item-shadow"></span>
+      </button>
+      <button class="grid__item grid__item--23">
+        <span class="grid__item-door"> 23 </span>
+        <span class="grid__item-shadow"></span>
+      </button>
+      <button class="grid__item grid__item--sky grid__item--lg grid__item--24">
+        <span class="grid__item-door"> 24 </span>
+        <span class="grid__item-shadow"></span>
+      </button>
     </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
-    <script src="function.js"></script>
-    <script src="../index.js"></script>
+    <!-- <script>
+      window.onload = function () {
+        document.body.classList.remove("is-preload");
+        const transition_el = document.querySelector(".transition");
+        const anchors = document.querySelectorAll("a");
+        setTimeout(() => {
+          transition_el.classList.remove("is-active");
+        }, 500);
+        for (let i = 0; i < anchors.length; i++) {
+          const anchor = anchors[i];
+          anchor.addEventListener("click", (e) => {
+            e.preventDefault();
+            let target = e.target.href;
+            transition_el.classList.add("is-active");
+            setTimeout(() => {
+              window.location.href = target;
+            }, 500);
+          });
+        }
+      };
+      window.ontouchmove = function () {
+        return false;
+      };
+      window.onorientationchange = function () {
+        document.body.scrollTop = 0;
+      };
+    </script> -->
+    <script src="./index.js"></script>
   </body>
 </html>
