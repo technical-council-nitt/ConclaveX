@@ -351,4 +351,5 @@ canvas {
   font-size: 1.4rem;
   transition: 0.2s ease-in-out;
   cursor: pointer;
+  margin: 1em;
 }

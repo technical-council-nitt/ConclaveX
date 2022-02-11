@@ -18,8 +18,47 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="../transitions.css" />
+    <link rel="stylesheet" href="./navBar.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body class="is-preload">
+    <header>
+      <div class="containerNav">
+        <nav class="site-nav">
+          <ul>
+            <li>
+              <a href="../../index.html"
+                ><i class="fa fa-home site-nav--icon"></i>Home</a
+              >
+            </li>
+            <li>
+              <a href="../../Events/index.html"
+                ><i class="fa fa-info site-nav--icon"></i>Competitions</a
+              >
+            </li>
+            <li>
+              <a href="../../Timeline/index.html"
+                ><i class="fa fa-pencil site-nav--icon"></i>Events</a
+              >
+            </li>
+            <li>
+              <a href="../../Leaderboard/index.html"
+                ><i class="fa fa-usd site-nav--icon"></i>Leaderboard</a
+              >
+            </li>
+            <!-- <li>
+              <a href="../Sponsors/index.html"
+                ><i class="fa fa-envelope site-nav--icon"></i>Sponsors</a
+              >
+            </li> -->
+          </ul>
+        </nav>
+
+        <div class="menu-toggle">
+          <div class="hamburger"></div>
+        </div>
+      </div>
+    </header>
     <!-- <div class="transition transition-3 is-active"></div> -->
     <canvas id="canvas" style="z-index: 10"></canvas>
     <div class="container" style="background-image: url('bg.jpg')">
