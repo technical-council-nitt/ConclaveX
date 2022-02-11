@@ -1332,6 +1332,10 @@ canvas {
     height: 50px;
   }
 
+  .center-logo {
+    left: calc(50vw - 45px);
+  }
+
   .right-logo img {
     height: 35px;
   }
@@ -1339,7 +1343,6 @@ canvas {
   .left-logo {
     position: absolute;
     top: 15px;
-    left: 6px;
     z-index: 100;
   }
   .center-logo {
