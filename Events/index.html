@@ -11,8 +11,37 @@
     <noscript
       ><link rel="stylesheet" href="assets/css/noscript.css"
     /></noscript>
+    <link rel="stylesheet" href="./navBar.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body class="is-preload">
+    <header>
+      <div class="container">
+        <nav class="site-nav">
+          <ul>
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+            <li>
+              <a href="../Events/index.html">Competitions</a>
+            </li>
+            <li>
+              <a href="../Timeline/index.html">Events</a>
+            </li>
+            <li>
+              <a href="../Leaderboard/index.html">Leaderboard</a>
+            </li>
+            <!-- <li>
+              <a href="../Sponsors/index.html">Sponsors</a>
+            </li> -->
+          </ul>
+        </nav>
+
+        <div class="menu-toggle">
+          <div class="hamburger"></div>
+        </div>
+      </div>
+    </header>
     <canvas id="canvas" style="z-index: 10"></canvas>
     <br /><br /><br /><br />
     <!-- Page Wrapper -->
@@ -49,7 +78,16 @@
           >
             <div class="content span-7">
               <h2 class="major">codeNITe AlgoCup</h2>
-              <h4>Spider R&D</h4>
+              <div
+                style="
+                  display: flex;
+                  width: 100%;
+                  justify-content: space-between;
+                "
+              >
+                <h4>Spider R&D</h4>
+                <h4>Prize: &#8377;10,000</h4>
+              </div>
               <p>
                 Competitive Programming Contest involves the host presenting a
                 set of logical or mathematical problems, to the contestants, and
@@ -81,7 +119,16 @@
           <section class="panel spotlight medium right" id="first">
             <div class="content span-7">
               <h2 class="major">Startup Shipwreck</h2>
-              <h4>ECell NITT</h4>
+              <div
+                style="
+                  display: flex;
+                  width: 100%;
+                  justify-content: space-between;
+                "
+              >
+                <h4>ECell NITT</h4>
+                <h4>Prize: &#8377;5,000</h4>
+              </div>
               <p>
                 The contestants will be given a scenario where they represent a
                 company as its CEO, with pertinent details about the company and
@@ -112,7 +159,16 @@
           <section class="panel spotlight medium right" id="first">
             <div class="content span-7">
               <h2 class="major">VC Panic</h2>
-              <h4>ECell NITT</h4>
+              <div
+                style="
+                  display: flex;
+                  width: 100%;
+                  justify-content: space-between;
+                "
+              >
+                <h4>ECell NITT</h4>
+                <h4>Prize: &#8377;5,000</h4>
+              </div>
               <p>
                 This event aims to showcase the upcoming student startup ideas
                 from NITT, which are being incubated with the help of ECell,
@@ -144,7 +200,16 @@
           <section class="panel spotlight medium right" id="first">
             <div class="content span-7">
               <h2 class="major">Ideathon</h2>
-              <h4>WIN NITT</h4>
+              <div
+                style="
+                  display: flex;
+                  width: 100%;
+                  justify-content: space-between;
+                "
+              >
+                <h4>WIN NITT</h4>
+                <h4>Prize: &#8377;5,000</h4>
+              </div>
               <p>
                 An opportunity for all innovative thinkers to showcase their
                 problem-solving skills by brainstorming creative solutions to
@@ -176,7 +241,16 @@
           <section class="panel spotlight medium right" id="first">
             <div class="content span-7">
               <h2 class="major">Research Dashboard</h2>
-              <h4>IEEE</h4>
+              <div
+                style="
+                  display: flex;
+                  width: 100%;
+                  justify-content: space-between;
+                "
+              >
+                <h4>IEEE</h4>
+                <h4>Prize: &#8377;5,000</h4>
+              </div>
 
               <p>
                 A poster presentation competition where researchers will be
@@ -210,7 +284,16 @@
           <section class="panel spotlight medium right" id="first">
             <div class="content span-7">
               <h2 class="major">Innovations Fair</h2>
-              <h4>IEEE Student Branch</h4>
+              <div
+                style="
+                  display: flex;
+                  width: 100%;
+                  justify-content: space-between;
+                "
+              >
+                <h4>IEEE Student Branch</h4>
+                <h4>Prize: &#8377;3,000</h4>
+              </div>
 
               <p>
                 An event for researchers and students to showcase their
@@ -243,7 +326,16 @@
           <section class="panel spotlight medium right" id="first">
             <div class="content span-7">
               <h2 class="major">Researchers Parley Panel Discussion</h2>
-              <h4>RSF NITT</h4>
+              <div
+                style="
+                  display: flex;
+                  width: 100%;
+                  justify-content: space-between;
+                "
+              >
+                <h4>RSF NITT</h4>
+                <h4>Prize: &#8377;5,000</h4>
+              </div>
 
               <p>
                 An event where researchers will battle with words and ideas on
@@ -276,7 +368,16 @@
           <section class="panel spotlight medium right" id="first">
             <div class="content span-7">
               <h2 class="major">Gnarly Scout</h2>
-              <h4>RSF NITT</h4>
+              <div
+                style="
+                  display: flex;
+                  width: 100%;
+                  justify-content: space-between;
+                "
+              >
+                <h4>RSF NITT</h4>
+                <h4>Prize: &#8377;5,000</h4>
+              </div>
 
               <p>
                 An information based foraging event which puts to test the
@@ -309,15 +410,66 @@
           <section class="panel spotlight medium right" id="first">
             <div class="content span-7">
               <h2 class="major">NITT Designathon</h2>
-              <h4>Graphique</h4>
+              <h3>Design to Code</h3>
+              <div
+                style="
+                  display: flex;
+                  width: 100%;
+                  justify-content: space-between;
+                "
+              >
+                <h4>Graphique</h4>
+                <h4>Prize: &#8377;10,000</h4>
+              </div>
+
+              <p>
+                NITT DESIGNATHON is a 24-hour online hackathon for design
+                students and developers who will become the next generation of
+                UI and UX. It is an opportunity to use your programming skills
+                to recreate an UI and compete against the best design students
+                and developers across the country in a fast-paced environment.
+              </p>
+              <div class="button-group">
+                <a
+                  href="https://drive.google.com/file/d/11DNMSzQxy1NiFCd9Jsdx5WnZby9VS2Hf/preview"
+                  target="_blank"
+                >
+                  <button class="doc-btn">Details</button>
+                </a>
+                <a href="https://forms.gle/J3C6BXX5foYPm8daA" target="_blank">
+                  <button class="reg-btn">Register</button>
+                </a>
+              </div>
+            </div>
+            <div
+              class="image filtered tinted"
+              style="filter: brightness(0.4)"
+              data-position="top left"
+            >
+              <img src="images/image9.jpg" alt="" />
+            </div>
+          </section>
+          <section class="panel spotlight medium right" id="first">
+            <div class="content span-7">
+              <h2 class="major">NITT Designathon</h2>
+              <h3>Complete Design</h3>
+              <div
+                style="
+                  display: flex;
+                  width: 100%;
+                  justify-content: space-between;
+                "
+              >
+                <h4>Graphique</h4>
+                <h4>Prize: &#8377;10,000</h4>
+              </div>
 
               <p>
                 NITT DESIGNATHON is a 24-hour online hackathon for design
                 students and developers who will become the next generation of
                 UI and UX. It is an opportunity to compete against the best
                 design students and developers across the country in a
-                fast-paced environment and test your design thinking practices,
-                management as well as collaboration skills.
+                fast-paced environment.
               </p>
               <div class="button-group">
                 <a
@@ -343,7 +495,16 @@
           <section class="panel spotlight medium right" id="first">
             <div class="content span-7">
               <h2 class="major">Code Character</h2>
-              <h4>Delta Force</h4>
+              <div
+                style="
+                  display: flex;
+                  width: 100%;
+                  justify-content: space-between;
+                "
+              >
+                <h4>Delta Force</h4>
+                <h4>Prize: &#8377;10,000</h4>
+              </div>
 
               <p>
                 A turn-based AI strategy programming contest, where each player
@@ -374,7 +535,16 @@
           <section class="panel spotlight medium right" id="first">
             <div class="content span-7">
               <h2 class="major">Pitch Perfect</h2>
-              <h4>180 Degrees Consulting NIT Trichy</h4>
+              <div
+                style="
+                  display: flex;
+                  width: 100%;
+                  justify-content: space-between;
+                "
+              >
+                <h4>180 Degrees Consulting NIT Trichy</h4>
+                <h4>Prize: &#8377;5,000</h4>
+              </div>
 
               <p>
                 Pitch Perfect is a case study competition that tests the

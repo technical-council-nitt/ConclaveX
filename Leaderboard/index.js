@@ -230,3 +230,11 @@ institutes
 //   .attr("class", "comp1")
 //   .append("span")
 //   .text(({ comp3 }) => comp3);
+// document.querySelector(".menu-toggle").addEventListener("click", function () {
+//   document.querySelector(".site-nav").toggleClass("site-nav--open", 500);
+//   document.querySelector(".menu-toggle").toggleClass("open");
+// });
+// $(".menu-toggle").click(function () {
+//   $(".site-nav").toggleClass("site-nav--open", 500);
+//   $(this).toggleClass("open");
+// });
