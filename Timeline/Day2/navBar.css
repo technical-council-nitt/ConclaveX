@@ -27,7 +27,7 @@ header {
   width: 100%;
   z-index: 10000;
   position: fixed;
-  right: 15px;
+  right: 4px;
   font-family: "Quicksand", sans-serif;
 }
 
@@ -147,6 +147,9 @@ header::after {
     display: none;
   }
 
+  header {
+    right: 15px;
+  }
   .site-nav {
     height: auto;
     position: relative;

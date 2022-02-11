@@ -28,7 +28,7 @@ header {
   z-index: 10000;
   position: fixed;
   font-family: "Quicksand", sans-serif;
-  right: 15px;
+  right: 4px;
 }
 
 header::after {
@@ -145,6 +145,10 @@ header::after {
 @media (min-width: 700px) {
   .menu-toggle {
     display: none;
+  }
+
+  header {
+    right: 15px;
   }
 
   .site-nav {

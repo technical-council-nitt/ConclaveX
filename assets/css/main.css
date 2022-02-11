@@ -1298,45 +1298,58 @@ canvas {
   z-index: 100;
 }
 
+.center-logo {
+  position: absolute;
+  top: -14px;
+  left: calc(50vw - 50px);
+  z-index: 100;
+}
+
+.center-logo img {
+  width: 150px;
+  height: 150px;
+}
+
 .left-logo img {
   width: 90px;
   height: 90px;
 }
 
 .right-logo img {
-  width: 150px;
-  height: 150px;
+  height: 70px;
 }
 
 .right-logo {
   position: absolute;
-  top: -5px;
-  right: -20px;
+  top: 22px;
+  right: 10px;
   z-index: 100;
 }
 
 @media (max-width: 500px) {
   .left-logo img {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
   }
 
   .right-logo img {
-    width: 130px;
-    height: 130px;
+    height: 35px;
   }
 
   .left-logo {
     position: absolute;
-    top: 10px;
+    top: 15px;
     left: 6px;
     z-index: 100;
   }
-  .right-logo {
+  .center-logo {
     position: absolute;
-    top: -15px;
-    right: -30px;
+    top: -5px;
     z-index: 100;
+  }
+  .center-logo img {
+    width: 90px;
+    height: 90px;
   }
 
   footer p {
